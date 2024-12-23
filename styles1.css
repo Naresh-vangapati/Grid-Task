@@ -8,6 +8,7 @@ body{
     position: relative;
 }
 .main-container{
+    width: 800px;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px 100px 100px;
@@ -67,4 +68,14 @@ body{
 .item12{
     background-color: red;
     grid-column: 6/7;
+}
+@media screen and (max-width : 600px) {
+    .main-container{
+        width: 380px;
+    }  
+}
+@media screen and (min-width : 601px) and (max-width : 900px){
+    .main-container{
+        width: 750px;
+    }
 }
